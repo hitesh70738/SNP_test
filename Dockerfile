@@ -1,17 +1,11 @@
-# Use an official Python runtime as a parent image
-FROM python:3.7-slim
+# Which version of python is required 
+FROM python:latest
 
-# Set the working directory to /app
-WORKDIR /app
-
-# Copy the requirements file into the container
-COPY requirements.txt .
-
-# Install any dependencies specified in requirements.txt
-RUN pip install -r requirements.txt
-
-# Copy the rest of the application code into the container
+# Copy all file in the local file system into the container
 COPY . .
+
+# Install dependencies specified in requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose port 8080 so that the container knows which port to listen on
 EXPOSE 8080
