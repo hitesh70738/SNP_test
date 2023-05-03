@@ -33,6 +33,6 @@ line 11 -- "EXPOSE 8080" - This dockerfile instruction informs docker that the c
 
 line 14 -- "CMD ["python", "app.py"]" - finally this command defines the executable of a docker image. We want docker to run the command "python app.py" and this command will run the application. 
 
-## Deploy Container onto infrastructure of your choice.
+## 3 -- Deploy Container onto infrastructure of your choice.
 
 For this step I was not too sure what to do. But my take on this would be to us a GCP container registry. Container registry is a place to manage Docker images, perform vulnerability analysis, and decide who can access what with access control. This is similar to Azure Devops. 
