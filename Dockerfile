@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 # Define the command to run when the container starts
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
